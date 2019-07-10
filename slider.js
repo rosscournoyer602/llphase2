@@ -8,9 +8,20 @@ $(document).ready(() => {
     arrows: true,
     responsive: [
       {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          dots: true,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
         breakpoint: 768,
         settings: {
           arrows: false,
+          dots: true,
           centerMode: true,
           centerPadding: '40px',
           slidesToShow: 2
@@ -20,6 +31,7 @@ $(document).ready(() => {
         breakpoint: 580,
         settings: {
           arrows: false,
+          dots: true,
           centerMode: true,
           centerPadding: '100px',
           slidesToShow: 1

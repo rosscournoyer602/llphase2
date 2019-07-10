@@ -1,10 +1,9 @@
 /* eslint-disable prefer-arrow-callback */
 /* eslint-disable no-undef */
-const bios = document.getElementsByClassName('partner-bio-content');
-console.log(bios.length);
-bios.forEach(bio => {
-  console.log(bio);
-});
+// eslint-disable-next-line no-unused-vars
+function addClick(bio) {
+  bio.classList.toggle('visible');
+}
 // document.body.on('load', () => {
 //   document.body.getElementsByClassName('partner-bio-content').forEach(element => {
 //     console.log(element);
