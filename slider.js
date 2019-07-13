@@ -3,7 +3,7 @@ $(document).ready(() => {
   // eslint-disable-next-line no-undef
   $('.portrait-row').slick({
     centerMode: true,
-    centerPadding: '20px',
+    centerPadding: '70px',
     slidesToShow: 3,
     arrows: true,
     responsive: [
@@ -33,7 +33,7 @@ $(document).ready(() => {
           arrows: false,
           dots: true,
           centerMode: true,
-          centerPadding: '100px',
+          centerPadding: '40px',
           slidesToShow: 1
         }
       }

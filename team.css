@@ -95,11 +95,10 @@
   height: 240px;
   overflow-y: scroll;
 }
-.partner-bio-content:hover {
-  opacity: .8;
-}
-.visible {
-  opacity: 0;
+@media screen and (min-width: 992px) {
+  .partner-bio-content:hover {
+    opacity: .8;
+  }
 }
 @media screen and (max-width: 1070px) {
   .partner-bio-content {
@@ -154,7 +153,7 @@
   z-index: 99;
 }
 .slick-prev {
-  left: -50px;
+  left: 0px;
 }
 .slick-prev:before {
   color: black
