@@ -1,10 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
     <link href="./normalize.css" rel="stylesheet" type="text/css">
     <link href="./webflow.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -35,7 +33,7 @@
         </div>
       </div>
       <div class="section info-content">
-      <div class="accordion" id="accordionExample">
+        <div class="accordion" id="accordionExample">
           <div class="card">
             <div class="card-header" id="headingOne">
               <h2 class="mb-0">
@@ -44,6 +42,7 @@
                 </button>
               </h2>
             </div>
+            <!-- Slider accordion -->
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div class="card-body">
                 <div class=team-description>
@@ -51,39 +50,83 @@
                     The Brand Team is responsible for It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                   </p>
                 </div>
+                <!-- Slider starts -->
                 <div class="portrait-row">
-                  <div className="partner-container">
-                    <img class="partner-portrait" src="https://via.placeholder.com/250x250?text=portrait" />
+                  <!-- Slider item -->
+                  <div 
+                    className="partner-container" 
+                    style="
+                      background-image: url(https://learningleaderstest.s3-ap-northeast-1.amazonaws.com/Alice-min.JPG); 
+                      height: 400px;
+                      overflow: hidden;
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      width: 100%;"
+                    >
+                    <!-- <img class="partner-portrait" src="https://learningleaderstest.s3-ap-northeast-1.amazonaws.com/Alice-min.JPG" /> -->
                     <div class="partner-bio-content" onclick="addClick(this)">
                       <h3>Partner Name</h3>
                       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
                     </div>
                   </div>
-                  <div className="partner-container">
-                    <img class="partner-portrait" src="https://via.placeholder.com/250x250?text=portrait" />
+                  <!-- Slider item end -->
+                  <div 
+                    className="partner-container" 
+                    style="
+                      background-image: url(https://learningleaderstest.s3-ap-northeast-1.amazonaws.com/Chen-min.JPG); 
+                      height: 400px;
+                      overflow: hidden;
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      width: 100%;"
+                    >
+                    <!-- <img class="partner-portrait" src="https://learningleaderstest.s3-ap-northeast-1.amazonaws.com/Ameera-min.jpg" /> -->
                     <div class="partner-bio-content" onclick="addClick(this)">
                       <h3>Partner Name</h3>
                       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
                     </div>
                   </div>
-                  <div className="partner-container" onclick="addClick(this)">
-                    <img class="partner-portrait" src="https://via.placeholder.com/250x250?text=portrait" />
+                  <div
+                    className="partner-container" 
+                    style="
+                      background-image: url(https://learningleaderstest.s3-ap-northeast-1.amazonaws.com/Andy-min.JPG); 
+                      height: 400px;
+                      overflow: hidden;
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      width: 100%;"
+                  >
                     <div class="partner-bio-content" onclick="addClick(this)">
                       <h3>Partner Name</h3>
                       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
                     </div>
                   </div>
-                  <div className="partner-container">
-                    <img class="partner-portrait" src="https://via.placeholder.com/250x250?text=portrait" />
+                  <div
+                  className="partner-container" 
+                    style="
+                      background-image: url(https://learningleaderstest.s3-ap-northeast-1.amazonaws.com/Ameera-min.jpg); 
+                      height: 400px;
+                      overflow: hidden;
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      width: 100%;"
+                  >
                     <div class="partner-bio-content" onclick="addClick(this)">
                       <h3>Partner Name</h3>
                       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
                     </div>
                   </div>
                 </div>
+                <!-- Slider end -->
               </div>
             </div>
           </div>
+          <!-- End slider accordion -->
+          <!-- Text Accoetion -->
           <div class="card">
             <div class="card-header" id="headingTwo">
               <h2 class="mb-0">
@@ -94,11 +137,11 @@
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
               <div class="card-body">
-                <h3>Bold Text</h3>
-                <p>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
               </div>
             </div>
           </div>
+          <!-- End Text Accordion -->
+          <!-- Image accordion -->
           <div class="card">
             <div class="card-header" id="headingThree">
               <h2 class="mb-0">
@@ -113,6 +156,60 @@
               </div>
             </div>
           </div>
+          <!-- End image accortion -->
+          <!-- Video Accordion  -->
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link accordion-title collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Single Video
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <iframe src="https://iframe.dacast.com/b/133867/f/718617" width="100%" height="400px" frameborder="0" scrolling="no" allow="autoplay" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- End Video Accordion -->
+           <!-- Video Carousel  -->
+          <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link accordion-title collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Video Carousel
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                  <!-- <div class=team-description>
+                    <p>
+                      The Brand Team is responsible for It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </p>
+                  </div> -->
+                  <!-- Slider starts -->
+                  <div class="video-row">
+                    <!-- Slider item -->
+                    <div className="video-container">
+                      <iframe src="https://iframe.dacast.com/b/133867/f/718617" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                    </div>
+                    <!-- Slider item end -->
+                    <div className="video-container">
+                      <iframe src="https://iframe.dacast.com/b/133867/f/718617" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe> 
+                    </div>
+                    <div className="video-container" onclick="addClick(this)">
+                      <iframe src="https://iframe.dacast.com/b/133867/f/718617" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                    </div>
+                    <div className="video-container">
+                      <iframe src="https://iframe.dacast.com/b/133867/f/718617" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <!-- Slider end -->
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     <!-- Optional JavaScript -->
@@ -124,5 +221,25 @@
     <script type="text/javascript" src="./slider.js"></script>
     <script type="text/javascript" src="./onClickBio.js"></script>
     <script type="text/javascript" src="./onClickBio.js"></script>
+    <script id="133867_f_718617" width="590" height="431" src="//player.dacast.com/js/player.js"  class="dacast-video"></script>
   </body>
 </html>
+
+<!-- Video Slider -->
+<!-- <div class="video-row"> -->
+    <!-- Slider item -->
+    <!-- <div className="partner-container">
+     
+    </div> -->
+    <!-- Slider item end -->
+    <!-- <div className="partner-container">
+      
+    </div>
+    <div className="partner-container" onclick="addClick(this)">
+      
+    </div>
+    <div className="partner-container">
+      
+    </div>
+  </div> -->
+  <!-- Video Slider End -->
