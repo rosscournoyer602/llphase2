@@ -8,6 +8,7 @@ $(document).ready(() => {
     centerPadding: '40px',
     slidesToShow: 3,
     arrows: true,
+    // autoplay: true,
     responsive: [
       {
         breakpoint: 768,
@@ -53,25 +54,5 @@ $(document).ready(() => {
 });
 
 $('.collapse').on('show.bs.collapse', function() {
-  // $('.video-row').resize();
-  $('.portrait-row').resize();
-  window.dispatchEvent(new Event('resize'));
-});
-
-$('.collapse').on('shown.bs.collapse', function() {
-  // $('.video-row').resize();
-  $('.portrait-row').resize();
-  window.dispatchEvent(new Event('resize'));
-});
-
-$('.collapse').on('hide.bs.collapse', function() {
-  // $('.video-row').resize();
-  $('.portrait-row').resize();
-  window.dispatchEvent(new Event('resize'));
-});
-
-$('.collapse').on('hidden.bs.collapse', function() {
-  // $('.video-row').resize();
-  $('.portrait-row').resize();
-  window.dispatchEvent(new Event('resize'));
+  $('.portrait-row').slick('next');
 });

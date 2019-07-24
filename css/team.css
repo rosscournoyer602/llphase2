@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Gotham";
-  src: url("./Gotham-Medium.otf") format('openType')
+  src: url("../fonts/Gotham-Medium.otf") format('openType')
 }
 
 @font-face {
   font-family: "Gotham-Bold";
-  src: url("./Gotham-Bold.otf") format('openType')
+  src: url("../fonts/Gotham-Bold.otf") format('openType')
 }
 
 h2 {
@@ -67,6 +67,9 @@ h2 {
   .card-body { 
     padding: 0;
     margin: 20px;
+  }
+  .page-description-header {
+    text-align: center;
   }
 }
 /* Accordion */
