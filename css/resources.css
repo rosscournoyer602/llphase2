@@ -1,9 +1,21 @@
-.file-item {
-  height: 100px;
-  width: 100px;
+.resource-item {
+  font-family: 'Gotham';
+  text-align: center;
+  padding: 30px;
 }
 
-.file-item-img {
-  height: 100px;
-  width: 100px;
+.resource-img {
+  height: 70px;
+}
+
+@media screen and (max-width: 992px) {
+  .resource-name {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .resource-name {
+    font-size: 12px;
+  }
 }
