@@ -78,13 +78,9 @@ h2 {
 .disappear {
   display: none;
 }
-.team-card {
-  max-height: 475px;
-  overflow-y: hidden;
-}
 
 .portrait-row {
-  max-height: 450px;
+  max-height: 400px;
 }
 
 .team-description {
@@ -147,6 +143,10 @@ h2 {
 /* Video Player */
 
 /* Slick Slider Settings */
+.slick-slider {
+  touch-action: auto !important;
+  -ms-touch-action: auto;
+}
 .slick-arrow {
   margin: 0 10px;
   z-index: 99;

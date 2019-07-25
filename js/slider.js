@@ -8,7 +8,6 @@ $(document).ready(() => {
     centerPadding: '40px',
     slidesToShow: 3,
     arrows: true,
-    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 768,
@@ -32,32 +31,14 @@ $(document).ready(() => {
       }
     ]
   });
-  $('.video-row').slick({
-    centerMode: true,
-    centerPadding: '20px',
-    slidesToShow: 1,
-    arrows: false,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          arrows: false,
-          dots: true,
-          centerMode: true,
-          centerPadding: '10px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
 });
 
 $('.collapse').on('hide.bs.collapse', function() {
-  $('.portrait-row').addClass('dissapear');
+  // $('.portrait-row').addClass('dissapear');
 });
 
 $('.collapse').on('shown.bs.collapse', function() {
-  $('.portrait-row').removeClass('dissapear');
+  // $('.portrait-row').removeClass('dissapear');
   $('.portrait-row').slick('next');
 });
+
