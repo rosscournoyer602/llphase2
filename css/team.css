@@ -74,9 +74,13 @@ h2 {
 }
 /* Accordion */
 /* Team Slider */
-/* .disappear {
+.disappear {
   display: none;
-} */
+}
+.team-card {
+  max-height: 500px;
+  overflow-y: hidden;
+}
 
 .portrait-row {
   max-height: 450px;

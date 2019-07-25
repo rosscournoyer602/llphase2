@@ -53,11 +53,11 @@ $(document).ready(() => {
   });
 });
 
-// $('.collapse').on('hide.bs.collapse', function() {
-//   $('.portrait-row').addClass('dissapear');
-// });
+$('.collapse').on('hide.bs.collapse', function() {
+  $('.portrait-row').addClass('dissapear');
+});
 
-$('.collapse').on('show.bs.collapse', function() {
-  // $('.portrait-row').removeClass('dissapear');
+$('.collapse').on('shown.bs.collapse', function() {
+  $('.portrait-row').removeClass('dissapear');
   $('.portrait-row').slick('next');
 });
