@@ -14,8 +14,9 @@ h2 {
 
 /* Header */
 .header-content {
-  height: 250px;
+  height: 400px;
   padding: 40px;
+  color: white;
 }
 .page-title-header {
   font-family: 'Gotham-Bold';
@@ -24,7 +25,7 @@ h2 {
 .page-description-header {
   font-family: 'Gotham';
   font-size: '18px';
-  text-align: left;
+  text-align: contain;
 }
 
 /* Accordion */
@@ -78,7 +79,7 @@ h2 {
   display: none;
 }
 .team-card {
-  max-height: 500px;
+  max-height: 475px;
   overflow-y: hidden;
 }
 
