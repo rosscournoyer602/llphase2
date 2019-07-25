@@ -74,6 +74,13 @@ h2 {
 }
 /* Accordion */
 /* Team Slider */
+/* .disappear {
+  display: none;
+} */
+
+.portrait-row {
+  max-height: 450px;
+}
 
 .team-description {
   margin: 10px;

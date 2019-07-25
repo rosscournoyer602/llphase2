@@ -8,7 +8,7 @@ $(document).ready(() => {
     centerPadding: '40px',
     slidesToShow: 3,
     arrows: true,
-    // autoplay: true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 768,
@@ -53,6 +53,11 @@ $(document).ready(() => {
   });
 });
 
+// $('.collapse').on('hide.bs.collapse', function() {
+//   $('.portrait-row').addClass('dissapear');
+// });
+
 $('.collapse').on('show.bs.collapse', function() {
+  // $('.portrait-row').removeClass('dissapear');
   $('.portrait-row').slick('next');
 });
