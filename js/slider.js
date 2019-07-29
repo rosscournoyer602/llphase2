@@ -31,6 +31,25 @@ $(document).ready(() => {
       }
     ]
   });
+  $('.video-row').slick({
+    centerMode: true,
+    centerPadding: '20px',
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          dots: true,
+          centerMode: true,
+          centerPadding: '10px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 });
 
 $('.collapse').on('hide.bs.collapse', function() {
