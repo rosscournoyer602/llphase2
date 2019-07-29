@@ -1,11 +1,22 @@
+.resource-row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px;
+}
+
 .resource-item {
+  flex: 1;
   font-family: 'Gotham';
   text-align: center;
-  padding: 30px;
 }
 
 .resource-img {
-  height: 70px;
+  height: 50px;
+  width: 50px;
+}
+
+.resource-name {
+  text-align: center;
 }
 
 @media screen and (max-width: 992px) {
