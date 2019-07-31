@@ -8,10 +8,6 @@
   src: url("../fonts/Gotham-Bold.otf") format('openType')
 }
 
-h2 {
-  font-size: 22px !important;
-}
-
 /* Header */
 .header-content {
   height: 400px;

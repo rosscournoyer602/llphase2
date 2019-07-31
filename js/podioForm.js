@@ -1,5 +1,3 @@
 $(document).ready(() => {
-  $('.webform').load(() => {
-    $('.webform').addClass('webform-responsive');
-  });
+  $('.webform').addClass('webform-responsive');
 });

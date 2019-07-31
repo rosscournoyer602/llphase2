@@ -1,0 +1,30 @@
+#career-nav {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.nav-link {
+  font-family: 'Gotham-Bold' !important;
+  font-weight: 600 !important;
+  width: 60%;
+  margin: auto;
+  float: none;
+  text-align: center;
+}
+.team-header {
+  font-family: 'Gotham-Bold';
+}
+
+.career-team-description {
+  margin: 40px;
+  font-family: 'Gotham';
+  font-size: 16px;
+}
+
+.job-description {
+  margin: 10px;
+  font-family: 'Gotham';
+  font-size: 16px;
+  text-align: left;
+}
