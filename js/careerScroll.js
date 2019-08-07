@@ -23,4 +23,16 @@ $(document).ready(() => {
   $('.back-to-top').click(() => {
     $('html, body').animate({ scrollTop: $('#career-nav').offset().top }, 1000);
   });
+  $('.debate-nav').click(() => {
+    $('html, body').animate({ scrollTop: $('#section1').offset().top }, 1000);
+  });
+  $('.public-speaking-nav').click(() => {
+    $('html, body').animate({ scrollTop: $('#section2').offset().top }, 1000);
+  });
+  $('.community-events-nav').click(() => {
+    $('html, body').animate({ scrollTop: $('#section3').offset().top }, 1000);
+  });
+  $('.professional-nav').click(() => {
+    $('html, body').animate({ scrollTop: $('#section3').offset().top }, 1000);
+  });
 });
