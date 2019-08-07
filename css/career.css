@@ -7,7 +7,7 @@
 .nav-link {
   font-family: 'Gotham-Bold' !important;
   font-weight: 600 !important;
-  width: 60%;
+  width: 70%;
   margin: auto;
   float: none;
   text-align: center;
@@ -20,6 +20,7 @@
   margin: 40px;
   font-family: 'Gotham';
   font-size: 16px;
+  text-align: left;
 }
 
 .job-description {
@@ -27,4 +28,32 @@
   font-family: 'Gotham';
   font-size: 16px;
   text-align: left;
+}
+
+.back-to-top {
+  font-family: 'Gotham';
+  font-size: 12px;
+  text-align: right;
+  color: #007bff; 
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  #career-nav {
+    width: 80%;
+  }
+  .career-nav {
+    color: #007bff;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #career-nav {
+    width: 70%;
+  }
+  .career-nav {
+    color: #007bff;
+    width: auto;
+  }
 }

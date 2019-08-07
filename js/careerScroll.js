@@ -9,7 +9,6 @@ $(document).ready(() => {
     $('html, body').animate({ scrollTop: $('#people').offset().top }, 1000);
   });
   $('.executive-nav').click(() => {
-    console.log('CLICK');
     $('html, body').animate({ scrollTop: $('#executive').offset().top }, 1000);
   });
   $('.systems-nav').click(() => {
@@ -20,5 +19,8 @@ $(document).ready(() => {
   });
   $('.experience-nav').click(() => {
     $('html, body').animate({ scrollTop: $('#experience').offset().top }, 1000);
+  });
+  $('.back-to-top').click(() => {
+    $('html, body').animate({ scrollTop: $('#career-nav').offset().top }, 1000);
   });
 });
