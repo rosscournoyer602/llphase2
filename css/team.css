@@ -51,6 +51,10 @@
   margin: -60px 20px 20px 20px;
 }
 
+.embed-body {
+  padding-left: 0%;
+}
+
 .team-description {
   margin: 10px;
   font-family: 'Gotham';
