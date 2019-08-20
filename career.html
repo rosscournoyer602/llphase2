@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href="./css/normalize.css" rel="stylesheet" type="text/css">
   <link href="./css/webflow.css" rel="stylesheet" type="text/css">
   <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
@@ -17,20 +18,20 @@
 </head>
 <body>
   <!-- Pre-existing webflor site header menu -->
-  <!-- <div data-collapse="medium" data-animation="over-right" data-duration="400" class="navigation w-nav">
+  <div data-collapse="medium" data-animation="over-right" data-duration="400" class="navigation w-nav">
     <div class="div-block-6 w-clearfix"><img src="./images/2015Jan6_Final-Logo-White-Small.png" alt="" class="image-5"></div>
     <nav role="navigation" class="nav-menu w-clearfix w-nav-menu"><a href="#learners" class="nav-link w-nav-link">Home</a><a href="/team.html" class="nav-link w-nav-link">Team</a><a href="#events" class="nav-link w-nav-link">Events</a><a href="#contact" class="nav-link w-nav-link">Contact</a><a href="http://www.joinlearningleaders.com" class="nav-link w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link">Careers</a><a href="http://joinlearningleaders.com" class="nav-link w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link">Careers</a><a href="/resources.html" class="nav-link w-nav-link">Resources</a><a href="http://zh.learningleaders.com" class="nav-link w-nav-link">中文</a></nav>
     <div class="nav-link menu w-hidden-main w-nav-button">
       <div class="icon-2 w-icon-nav-menu"></div>
     </div>
-  </div> -->
+  </div>
   <!-- Pre-existing webflor site header menu -->
-  <!-- <div class="section" style="background-image: url(https://learningleaderstest.s3-ap-northeast-1.amazonaws.com/Meet-The-Team_2-p-1080.jpeg); background-size: cover;">
+  <div class="section" style="background-image: url(https://learningleaderstest.s3-ap-northeast-1.amazonaws.com/Meet-The-Team_2-p-1080.jpeg); background-size: cover;">
     <div class="header-content">
       <h1 class="page-title-header">Accordion Page Title</h1>
       <h2 class="page-description-header">Introduction here.</h2>
     </div>
-  </div> -->
+  </div>
   <ul id="career-nav" class="nav nav-pills nav-justified">
     <li class="nav-item career-nav community-nav">
       <a class="nav-link career-nav" href="#">Community Team</a>
@@ -45,7 +46,7 @@
       <a class="nav-link career-nav" href="#systems" >Systems Team</a>
     </li>
     <li class="nav-item career-nav brand-nav">
-      <a class="nav-link career-nav" href="#">Brand Team</a>
+      <a class="nav-link career-nav" href="#brand">Brand Team</a>
     </li>
     <li class="nav-item career-nav experience-nav">
       <a class="nav-link career-nav" href="#">Experience Team</a>
@@ -53,16 +54,21 @@
   </ul>
   <!-- TEAM 1 ACCORDION START-->
   <div id="systems" class="section info-content">
+    <!-- Note ID 'team1accordion' -->
     <div class="accordion career" id="team1accordion">
       <h2 class="team-header"> Systems Team</h2>
-      <p class="career-team-description">The Systems Team is responsible for It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+      <p class="career-team-description">
+        The Systems Team is responsible for It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+        distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
       </p>
       <p class="back-to-top">Return to top&uarr;</p>
       <div class="card">
         <div class="card-header" id="headingOne">
+          <!-- Note aria-controls 'team1accordioncollapseOne and data target of same name (must match so controls work)' -->
           <h2 class="mb-0"><button aria-controls="team1accordioncollapseOne" aria-expanded="false" class="btn btn-link" data-target="#team1accordioncollapseOne" data-toggle="collapse" type="button">Senior Director of Systems</button></h2>
         </div>
+        <!--  Note id matches aria-controls of parent element 'team1accordioncollapeOne and data-parent matches id of accordion parent 'team1accordion'-->
+        <!-- Repeat this pattern when adding or modufying accordions and cards to keep controls working properly -->
         <div aria-labelledby="headingOne" class="collapse" id="team1accordioncollapseOne" data-parent="#team1accordion" >
           <div class="card-body">
             <!-- Job Start -->
@@ -91,7 +97,7 @@
       </div>
       <div class="card">
         <div class="card-header" id="headingTwo">
-          <h2 class="mb-0"><button aria-controls="team1accordioncollapseTwo" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team1accordioncollapseTwo" data-toggle="collapse" type="button">Job Two for Systems Team</button></h2>
+          <h2 class="mb-0"><button aria-controls="team1accordioncollapseTwo" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team1accordioncollapseTwo" data-toggle="collapse" type="button">Systems Job 2</button></h2>
         </div>
         <div aria-labelledby="headingTwo" class="collapse" data-parent="#team1accordion" id="team1accordioncollapseTwo">
           <div class="card-body">
@@ -117,7 +123,7 @@
       </div>
       <div class="card">
         <div class="card-header" id="headingThree">
-          <h2 class="mb-0"><button aria-controls="team1accordioncollapseThree" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team1accordioncollapseThree" data-toggle="collapse" type="button">Collapsible Group Item #3</button></h2>
+          <h2 class="mb-0"><button aria-controls="team1accordioncollapseThree" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team1accordioncollapseThree" data-toggle="collapse" type="button">Systems Job 3</button></h2>
         </div>
         <div aria-labelledby="headingThree" class="collapse" data-parent="#team1accordion" id="team1accordioncollapseThree">
           <div class="card-body">
@@ -143,7 +149,7 @@
       </div>
       <div class="card">
         <div class="card-header" id="headingFour">
-          <h2 class="mb-0"><button aria-controls="team1accordioncollapseFour" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team1accordioncollapseFour" data-toggle="collapse" type="button">Single Video</button></h2>
+          <h2 class="mb-0"><button aria-controls="team1accordioncollapseFour" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team1accordioncollapseFour" data-toggle="collapse" type="button">Systems Job 4</button></h2>
         </div>
         <div aria-labelledby="headingFour" class="collapse" data-parent="#team1accordion" id="team1accordioncollapseFour">
           <div class="card-body">
@@ -169,7 +175,7 @@
       </div>
       <div class="card">
       <div class="card-header" id="headingFive">
-        <h2 class="mb-0"><button aria-controls="team1accordioncollapseFive" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team1accordioncollapseFive" data-toggle="collapse" type="button">Web Form</button></h2>
+        <h2 class="mb-0"><button aria-controls="team1accordioncollapseFive" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team1accordioncollapseFive" data-toggle="collapse" type="button">Systems Job 5</button></h2>
       </div>
       <div aria-labelledby="headingFive" class="collapse" data-parent="#team1accordion" id="team1accordioncollapseFive">
         <div class="card-body">
@@ -194,71 +200,221 @@
       </div>
     </div>
   </div>
-    <!-- TEAM 1 ACCORDION END-->
-     <!-- TEAM 2 ACCORDION START-->
+  <!-- TEAM 1 ACCORDION END-->
+  <!-- TEAM 2 ACCORDION START-->
   <div id="executive" class="section info-content">
+    <div class="accordion" id="team2accordion">
       <h2 class="team-header"> Executive Team</h2>
-      <p class="career-team-description">The Executive Team is responsible for It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+      <p class="career-team-description">
+        The Executive Team is responsible for It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+        distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
       </p>
       <p class="back-to-top">Return to top&uarr;</p>
-      <div class="accordion" id="team2accordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0"><button aria-controls="team2accordioncollapseOne" aria-expanded="true" class="btn btn-link" data-target="#team2accordioncollapseOne" data-toggle="collapse" type="button">Brand Team</button></h2>
-          </div>
-          <div aria-labelledby="headingOne" class="collapse show" data-parent="#team2accordion" id="team2accordioncollapseOne">
-            <div class="card-body">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0"><button aria-controls="team2accordioncollapseOne" aria-expanded="true" class="btn btn-link" data-target="#team2accordioncollapseOne" data-toggle="collapse" type="button">Executive Job 1</button></h2>
+        </div>
+        <div aria-labelledby="headingOne" class="collapse show" data-parent="#team2accordion" id="team2accordioncollapseOne">
+          <div class="card-body">
+            <div class="job-description">
               Job 1
             </div>
           </div>
         </div>
+        </div>
         <div class="card">
           <div class="card-header" id="headingTwo">
-            <h2 class="mb-0"><button aria-controls="team2accordioncollapseTwo" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team2accordioncollapseTwo" data-toggle="collapse" type="button">Collapsible Group Item #2</button></h2>
+            <h2 class="mb-0"><button aria-controls="team2accordioncollapseTwo" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team2accordioncollapseTwo" data-toggle="collapse" type="button">Executive Job 2</button></h2>
           </div>
           <div aria-labelledby="headingTwo" class="collapse" data-parent="#team2accordion" id="team2accordioncollapseTwo">
             <div class="card-body">
-              Job 2
+              <div class="job-description">
+                Job 2
+              </div>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header" id="headingThree">
-            <h2 class="mb-0"><button aria-controls="team2accordioncollapseThree" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team2accordioncollapseThree" data-toggle="collapse" type="button">Collapsible Group Item #3</button></h2>
+            <h2 class="mb-0"><button aria-controls="team2accordioncollapseThree" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team2accordioncollapseThree" data-toggle="collapse" type="button">Executive Job 3</button></h2>
           </div>
           <div aria-labelledby="headingThree" class="collapse" data-parent="#team2accordion" id="team2accordioncollapseThree">
             <div class="card-body">
-              Job 3
+              <div class="job-description">
+                Job 3
+              </div>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header" id="headingFour">
-            <h2 class="mb-0"><button aria-controls="team2accordioncollapseFour" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team2accordioncollapseFour" data-toggle="collapse" type="button">Single Video</button></h2>
+            <h2 class="mb-0"><button aria-controls="team2accordioncollapseFour" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team2accordioncollapseFour" data-toggle="collapse" type="button">Exectuive Job 4</button></h2>
           </div>
           <div aria-labelledby="headingFour" class="collapse" data-parent="#team2accordion" id="team2accordioncollapseFour">
             <div class="card-body">
-              Job 4
+              <div class="job-description">
+                Job 4
+              </div>
             </div>
           </div>
         </div>
         <div class="card">
         <div class="card-header" id="headingFive">
-          <h2 class="mb-0"><button aria-controls="team2accordioncollapseFive" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team2accordioncollapseFive" data-toggle="collapse" type="button">Web Form</button></h2>
+          <h2 class="mb-0"><button aria-controls="team2accordioncollapseFive" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team2accordioncollapseFive" data-toggle="collapse" type="button">Executive Job 5</button></h2>
         </div>
         <div aria-labelledby="headingFive" class="collapse" data-parent="#team2accordion" id="team2accordioncollapseFive">
           <div class="card-body">
-            Job 5
+            <div class="job-description">
+              Job 5
+            </div>
           </div>
         </div>
       </div>
     </div>
       <!-- TEAM 2 ACCORDION END-->
-      <script
-      src="http://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
+      <!-- TEAM 3 ACCORDION START-->
+  <div id="brand" class="section info-content">
+    <div class="accordion" id="team3accordion">
+      <h2 class="team-header"> Brand Team</h2>
+      <p class="career-team-description">
+        The Brand Team is responsible for It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+        distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+      </p>
+      <p class="back-to-top">Return to top&uarr;</p>
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0"><button aria-controls="team3accordioncollapseOne" aria-expanded="true" class="btn btn-link" data-target="#team3accordioncollapseOne" data-toggle="collapse" type="button">Brand Job 1</button></h2>
+        </div>
+        <div aria-labelledby="headingOne" class="collapse show" data-parent="#team3accordion" id="team3accordioncollapseOne">
+          <div class="card-body">
+            <div class="job-description">
+              Job 1
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0"><button aria-controls="team3accordioncollapseTwo" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team3accordioncollapseTwo" data-toggle="collapse" type="button">Brand Job 2</button></h2>
+          </div>
+          <div aria-labelledby="headingTwo" class="collapse" data-parent="#team3accordion" id="team3accordioncollapseTwo">
+            <div class="card-body">
+              <div class="job-description">
+                Job 2
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0"><button aria-controls="team3accordioncollapseThree" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team3accordioncollapseThree" data-toggle="collapse" type="button">Brand Job 3</button></h2>
+          </div>
+          <div aria-labelledby="headingThree" class="collapse" data-parent="#team3accordion" id="team3accordioncollapseThree">
+            <div class="card-body">
+              <div class="job-description">
+                Job 3
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0"><button aria-controls="team3accordioncollapseFour" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team3accordioncollapseFour" data-toggle="collapse" type="button">Brand Job 4</button></h2>
+          </div>
+          <div aria-labelledby="headingFour" class="collapse" data-parent="#team3accordion" id="team3accordioncollapseFour">
+            <div class="card-body">
+              <div class="job-description">
+                Job 4
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+        <div class="card-header" id="headingFive">
+          <h2 class="mb-0"><button aria-controls="team3accordioncollapseFive" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team3accordioncollapseFive" data-toggle="collapse" type="button">Brand Job 5</button></h2>
+        </div>
+        <div aria-labelledby="headingFive" class="collapse" data-parent="#team3accordion" id="team3accordioncollapseFive">
+          <div class="card-body">
+            <div class="job-description">
+              Job 5
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- TEAM 3 ACCORDION END-->
+      <!-- TEAM 4 ACCORDION START-->
+  <!-- <div id="executive" class="section info-content">
+    <div class="accordion" id="team4accordion">
+      <h2 class="team-header"> Brand Team</h2>
+      <p class="career-team-description">
+        The Brand Team is responsible for It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+        distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+      </p>
+      <p class="back-to-top">Return to top&uarr;</p>
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0"><button aria-controls="team2accordioncollapseOne" aria-expanded="true" class="btn btn-link" data-target="#team2accordioncollapseOne" data-toggle="collapse" type="button">Brand Job 1</button></h2>
+        </div>
+        <div aria-labelledby="headingOne" class="collapse show" data-parent="#team2accordion" id="team2accordioncollapseOne">
+          <div class="card-body">
+            <div class="job-description">
+              Job 1
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0"><button aria-controls="team2accordioncollapseTwo" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team2accordioncollapseTwo" data-toggle="collapse" type="button">Brand Job 2</button></h2>
+          </div>
+          <div aria-labelledby="headingTwo" class="collapse" data-parent="#team2accordion" id="team2accordioncollapseTwo">
+            <div class="card-body">
+              <div class="job-description">
+                Job 2
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0"><button aria-controls="team2accordioncollapseThree" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team2accordioncollapseThree" data-toggle="collapse" type="button">Brand Job 3</button></h2>
+          </div>
+          <div aria-labelledby="headingThree" class="collapse" data-parent="#team2accordion" id="team2accordioncollapseThree">
+            <div class="card-body">
+              <div class="job-description">
+                Job 3
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0"><button aria-controls="team2accordioncollapseFour" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team2accordioncollapseFour" data-toggle="collapse" type="button">Brand Job 4</button></h2>
+          </div>
+          <div aria-labelledby="headingFour" class="collapse" data-parent="#team2accordion" id="team2accordioncollapseFour">
+            <div class="card-body">
+              <div class="job-description">
+                Job 4
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+        <div class="card-header" id="headingFive">
+          <h2 class="mb-0"><button aria-controls="team2accordioncollapseFive" aria-expanded="false" class="btn btn-link accordion-title collapsed" data-target="#team2accordioncollapseFive" data-toggle="collapse" type="button">Brand Job 5</button></h2>
+        </div>
+        <div aria-labelledby="headingFive" class="collapse" data-parent="#team2accordion" id="team2accordioncollapseFive">
+          <div class="card-body">
+            <div class="job-description">
+              Job 5
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- TEAM 3 ACCORDION END-->
+   <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
   <script src="./js/careerScroll.js" type="text/javascript"></script>
 </body>

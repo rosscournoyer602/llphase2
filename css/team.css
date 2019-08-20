@@ -16,18 +16,25 @@
 }
 .page-title-header {
   font-family: 'Gotham-Bold';
-  font-size: '20px';
+  font-size: 48px;
+  text-transform: uppercase;
 }
 .page-description-header {
   font-family: 'Gotham';
   font-size: '18px';
-  text-align: contain;
+  text-align: left;
+}
+.page-description {
+  font-family: 'Gotham';
+  font-size: 22px;
+  margin: 0px 40px 70px 40px;
 }
 
 /* Accordion */
 .card-header {
   font-family: 'Gotham-Bold';
   width: 20%;
+  z-index: 2;
 }
 
 .btn-link {
@@ -49,6 +56,7 @@
 .card-body {
   padding-left: 20%;
   margin: -60px 20px 20px 20px;
+  /* pointer-events: none; */
 }
 
 .embed-body {
