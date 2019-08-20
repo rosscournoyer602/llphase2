@@ -27,8 +27,21 @@
 .page-description {
   font-family: 'Gotham';
   font-size: 22px;
-  margin: 0px 40px 70px 40px;
+  margin: 70px 40px 70px 40px;
 }
+.image-section {
+  display: block;
+  text-align: center;
+  height: auto;
+}
+.text-section {
+  font-family: 'Gotham';
+  font-size: 18px;
+  margin: 30px 40px;
+}
+/* .image-section-image {
+  width: 80%;
+} */
 
 /* Accordion */
 .card-header {
