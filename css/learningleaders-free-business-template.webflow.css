@@ -234,9 +234,11 @@ p {
 .section.purple {
   height: 500px;
   background-color: #dde7ed;
-  background-image: url('../images/Meet-The-Team_2.jpg'), url('../images/inspiration-geometry.png');
-  background-position: 50% 50%, 0px 0px;
-  background-size: cover, 206px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 132, 218, 0.55)), to(rgba(0, 132, 218, 0.55))), url('../images/Meet-The-Team_2.jpg'), url('../images/inspiration-geometry.png');
+  background-image: linear-gradient(180deg, rgba(0, 132, 218, 0.55), rgba(0, 132, 218, 0.55)), url('../images/Meet-The-Team_2.jpg'), url('../images/inspiration-geometry.png');
+  background-position: 0px 0px, 50% 50%, 0px 0px;
+  background-size: auto, cover, 206px;
+  opacity: 1;
 }
 
 .section.clients {
@@ -274,9 +276,10 @@ p {
 .section.purple-copy {
   height: 500px;
   background-color: #dde7ed;
-  background-image: url('../images/Events_2.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0.61)), to(rgba(255, 0, 0, 0.61))), url('../images/Events_2.jpg');
+  background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.61), rgba(255, 0, 0, 0.61)), url('../images/Events_2.jpg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
 }
 
 .slider {
@@ -1402,7 +1405,7 @@ p {
 
 .heading-18 {
   font-family: Gotham, sans-serif;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 300;
 }
 
@@ -2410,7 +2413,10 @@ p {
 }
 
 .html-embed {
+  position: static;
   display: inline;
+  width: 80%;
+  height: 100%;
   float: none;
 }
 
@@ -3135,7 +3141,7 @@ p {
 
 .coach-miriam {
   height: 400px;
-  background-image: url('../images/IMG_0180.JPG');
+  background-image: url('../images/Miriam-Kohn.jpg');
   background-position: 50% 0%;
   background-size: cover;
 }
@@ -3411,6 +3417,9 @@ html.w-mod-js *[data-ix="scroll-appear-from-left-2"] {
     box-shadow: inset 0 1px 0 0 transparent;
   }
   .nav-link.menu {
+    position: absolute;
+    right: 0px;
+    width: auto !important;
     padding: 22px 17px;
     color: #000;
     font-size: 30px;
@@ -3485,6 +3494,8 @@ html.w-mod-js *[data-ix="scroll-appear-from-left-2"] {
     margin-top: 15px;
   }
   .nav-link.menu {
+    position: absolute;
+    right: 0px;
     padding-top: 11px;
     padding-bottom: 11px;
   }
@@ -3541,6 +3552,26 @@ html.w-mod-js *[data-ix="scroll-appear-from-left-2"] {
     background-image: linear-gradient(180deg, null, null), url('../images/FGA_5881.jpg'), url('../images/coolKidSpeech2.jpg');
     background-repeat: repeat, repeat, no-repeat;
   }
+  .div-block-6 {
+    position: static;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
   .paragraph-11 {
     padding-right: 34px;
     padding-left: 10px;
@@ -3578,6 +3609,7 @@ html.w-mod-js *[data-ix="scroll-appear-from-left-2"] {
 @media (max-width: 479px) {
   .navigation {
     position: static;
+    height: 55px;
     margin-top: 0px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3594,6 +3626,9 @@ html.w-mod-js *[data-ix="scroll-appear-from-left-2"] {
     float: none;
   }
   .nav-link.menu {
+    position: absolute;
+    left: auto;
+    right: 0px;
     margin-top: 2px;
     padding-top: auto;
     padding-bottom: auto;

@@ -8,6 +8,10 @@
   src: url("../fonts/Gotham-Bold.otf") format('openType')
 }
 
+.center-container {
+  text-align: center;
+}
+
 /* Header */
 .header-content {
   height: 400px;

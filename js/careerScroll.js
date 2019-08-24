@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 $(document).ready(() => {
-
   // smooth scrolling
   $('.community-nav').click(() => {
     $('html, body').animate({ scrollTop: $('#community').offset().top }, 1000);
