@@ -50,6 +50,25 @@ $(document).ready(() => {
       }
     ]
   });
+  $('.career-slider').slick({
+    centerMode: true,
+    centerPadding: '20px',
+    slidesToShow: 1,
+    arrows: true,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: true,
+          dots: true,
+          centerMode: true,
+          centerPadding: '10px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 });
 
 $('.collapse').on('hide.bs.collapse', function() {
@@ -60,4 +79,3 @@ $('.collapse').on('shown.bs.collapse', function() {
   // $('.portrait-row').removeClass('dissapear');
   $('.portrait-row').slick('next');
 });
-

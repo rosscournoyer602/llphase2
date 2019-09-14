@@ -7,13 +7,16 @@
 .nav-link {
   /* font-family: 'Gotham-Bold' !important;
   font-weight: 600 !important; */
-  width: 70%;
   margin: auto;
   float: none;
   text-align: center;
 }
 .team-header {
   font-family: 'Gotham-Bold';
+}
+
+.career-slider {
+  
 }
 
 .career-team-description {
